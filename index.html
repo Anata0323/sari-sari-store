@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sari-Sari Store POS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Lourdes Store</h1>
+
+        <!-- SNACKS -->
+        <h2>Snacks</h2>
+
+        <button onclick="addToCart('Oreo', 10)">
+            Oreo - ₱10
+        </button>
+
+        <button onclick="addToCart('Piattos', 20)">
+            Piattos - ₱20
+        </button>
+
+        <!-- ALCOHOL -->
+        <h2>Alcohol</h2>
+
+        <button onclick="addToCart('Emperador', 120)">
+            Emperador - ₱120
+        </button>
+
+        <button onclick="addToCart('Red Horse', 90)">
+            Red Horse - ₱90
+        </button>
+
+        <!-- BISCUITS -->
+        <h2>Biscuits</h2>
+
+        <button onclick="addToCart('Rebisco', 8)">
+            Rebisco - ₱8
+        </button>
+
+        <!-- CANNED GOODS -->
+        <h2>Can Goods</h2>
+
+        <button onclick="addToCart('Sardines', 25)">
+            Sardines - ₱25
+        </button>
+
+        <!-- PANCIT CANTON -->
+        <h2>Pancit Canton</h2>
+
+        <button onclick="addToCart('Lucky Me', 20)">
+            Lucky Me - ₱20
+        </button>
+
+        <!-- WASHING POWDER -->
+        <h2>Washing Powder</h2>
+
+        <button onclick="addToCart('Surf Powder', 15)">
+            Surf Powder - ₱15
+        </button>
+
+        <!-- SHAMPOO -->
+        <h2>Shampoo</h2>
+
+        <button onclick="addToCart('Sunsilk', 7)">
+            Sunsilk - ₱7
+        </button>
+
+        <!-- CIGARETTES -->
+        <h2>Cigarettes</h2>
+
+        <button onclick="addToCart('Marlboro', 20)">
+            Marlboro - ₱20
+        </button>
+
+        <hr>
+
+        <!-- CART -->
+        <h2>Cart</h2>
+
+        <ul id="cart-list"></ul>
+
+        <h3>Total: ₱<span id="total">0</span></h3>
+
+        <input type="number" id="payment" placeholder="Enter payment">
+
+        <button onclick="calculateChange()">
+            Calculate Change
+        </button>
+
+        <button onclick="resetCart()">
+            New Customer
+        </button>
+
+        <h3>Change: ₱<span id="change">0</span></h3>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
